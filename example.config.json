@@ -1,0 +1,23 @@
+{
+    "token": "",
+    "id": 0,
+    "dev_id": 0,
+    "admin_chat": 0,
+    "app": {
+        "id": 0,
+        "hash": ""
+    },
+    "langs": ["ru", "en", "ua"],
+    "version": "1.0.0",
+    "commands": {
+        "admin": true,
+        "hides": true,
+        "other": true
+    },
+    "statuses": {
+        "-1": "Заблокирован",
+        "0": "Обычный",
+        "1": "Администратор",
+        "2": "Разработчик"
+    }
+}

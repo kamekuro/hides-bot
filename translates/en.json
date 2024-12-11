@@ -1,0 +1,44 @@
+{
+    "utils": {
+        "u_need_admin": "👑 <b>You need {status} admin-status for this action.</b>",
+        "wait": "🕓 <i>Please, wait…</i>",
+        "no_user": "🤔 <b>You don't specify an user.</b>"
+    },
+    "kbs": {
+        "help": "📜 Guide of usage",
+        "change_lang": "🏳️ Change language",
+        "developer": "👨‍💻 Developer",
+        "open_hide": "👀 Open message",
+        "retry": "Retry"
+    },
+    "admin": {
+        "code": "💻 <b>Code:</b>\n{code}\n\n",
+        "python_err": "❌ <b>Error</b>:\n<pre language=\"error\">{stack}\n\n🚫 {error}</pre>",
+        "python": "✅ <b>Result:</b>\n<pre language=\"python\">{result}</pre>",
+        "terminal": "⌨️ <b>System command:</b>\n<pre language=\"shell\">{cmd}</pre>",
+        "shell_out": "\n📼 <b>Stdout:</b>\n<pre language=\"shell\">{out}</pre>",
+        "shell_err": "\n\n❌ <b>Errors:</b>\n<pre language=\"shell\">{err}</pre>",
+        "current_status": "📂 <b>Current status of user [<code>{uid}</code>]: [{status}]</b>",
+        "status_changed": "📂✏ <b>Status of user [<code>{uid}</code>] was changed:</b> [{old}] -> [{new}]"
+    },
+    "hides": {
+        "guide_title": "❓ How use this bot?",
+        "guide": "💡 <b>Write <code>@{me} your text @username</code> for hide the message. You can use ID of user instead @username.</b>",
+        "send_hide": "🤫 Send hidden message for {us}",
+        "send_except": "🤫 Send hidden message for all except {us}",
+        "send_spoiler": "✅ Send spoiler (all can read this)",
+        "hide": "🤫 <b>Hidden message for {us}</b>",
+        "except": "🤫 <b>Hidden message for all except {us}</b>",
+        "spoiler": "✅ <b>Hidden message for all</b>",
+        "hide_is_dead": "☹ This hide is dead. All hidden messages is available only for 1 hour",
+        "not4u": "🤫 This hidden message not for you!"
+    },
+    "other": {
+        "start": "👋 <b>Hello!</b>\n\nI am a bot, which can hide your message from prying eyes!\n\nTo hide the message write <code>@{username}</code> and your message in any chat. At the end, you can specify the users who will see the message.\n\n<b>For example: <code>@{username} it's top secret message! @unneyon</code>, then only @unneyon will see the message.</b>",
+        "lang_saved": "🇬🇧 <b>Language saved!</b>",
+        "choose_lang": "🏳️ <b>Choose the language</b>",
+        "uid": "🆔 <b>ID of this user:</b> <code>{uid}</code>",
+        "your_id": "🆔 <b>Your ID:</b> <code>{uid}</code>",
+        "ping": "⚙ <b>Pong!</b>\n<b>Event latency: {event}ms | Handler took: {took}ms | API: {api}ms</b>\n\n🚀 <b>Elapsed since restart:</b> {uptime}"
+    }
+}
