@@ -116,7 +116,7 @@ async def sendHide(client: pyrogram.Client, query: types.InlineQuery):
                             callback_data=f"open_hide:{rand_uuid}"
                         )
                     ]]),
-                    thumb_url="https://static.unneyon.ru/hides/hide.png"
+                    thumb_url="https://github.com/kamekuro/hides-bot/blob/main/data/hide.png"
                 ),
                 types.InlineQueryResultArticle(
                     title=query.tds.get("hides", "send_except").format(
@@ -134,7 +134,7 @@ async def sendHide(client: pyrogram.Client, query: types.InlineQuery):
                             callback_data=f"open_except:{rand_uuid}"
                         )
                     ]]),
-                    thumb_url="https://static.unneyon.ru/hides/except.png"
+                    thumb_url="https://github.com/kamekuro/hides-bot/blob/main/data/except.png"
                 )
             ],
             cache_time=0
@@ -155,7 +155,7 @@ async def sendHide(client: pyrogram.Client, query: types.InlineQuery):
                             callback_data=f"open_spoiler:{rand_uuid}"
                         )
                     ]]),
-                    thumb_url="https://static.unneyon.ru/hides/spoiler.png"
+                    thumb_url="https://github.com/kamekuro/hides-bot/blob/main/data/spoiler.png"
                 )
             ],
             cache_time=0
@@ -178,15 +178,6 @@ async def openHide(client: pyrogram.Client, query: types.CallbackQuery):
         hide.get(
             "text",
             query.tds.get("hides", "hide_is_dead")
-        ).format(
-            lang=query.from_user.language_code,
-            username=f"@{query.from_user.id}" if not query.from_user.username else f"@{query.from_user.username}",
-            uid=str(query.from_user.id),
-            date=datetime.datetime.now(tz=pytz.timezone("Europe/Moscow")).strftime("%d.%m.%Y"),
-            time=datetime.datetime.now(tz=pytz.timezone("Europe/Moscow")).strftime("%H:%M"),
-            name=query.from_user.full_name,
-            first_name=query.from_user.first_name,
-            last_name='' if query.from_user.last_name is None else query.from_user.last_name,
         ),
         show_alert=True
     )
@@ -221,15 +212,6 @@ async def openHide(client: pyrogram.Client, query: types.CallbackQuery):
         hide.get(
             "text",
             query.tds.get("hides", "hide_is_dead")
-        ).format(
-            lang=query.from_user.language_code,
-            username=f"@{query.from_user.id}" if not query.from_user.username else f"@{query.from_user.username}",
-            uid=str(query.from_user.id),
-            date=datetime.datetime.now(tz=pytz.timezone("Europe/Moscow")).strftime("%d.%m.%Y"),
-            time=datetime.datetime.now(tz=pytz.timezone("Europe/Moscow")).strftime("%H:%M"),
-            name=query.from_user.full_name,
-            first_name=query.from_user.first_name,
-            last_name='' if query.from_user.last_name is None else query.from_user.last_name,
         ),
         show_alert=True
     )
@@ -264,15 +246,6 @@ async def openHide(client: pyrogram.Client, query: types.CallbackQuery):
         hide.get(
             "text",
             query.tds.get("hides", "hide_is_dead")
-        ).format(
-            lang=query.from_user.language_code,
-            username=f"@{query.from_user.id}" if not query.from_user.username else f"@{query.from_user.username}",
-            uid=str(query.from_user.id),
-            date=datetime.datetime.now(tz=pytz.timezone("Europe/Moscow")).strftime("%d.%m.%Y"),
-            time=datetime.datetime.now(tz=pytz.timezone("Europe/Moscow")).strftime("%H:%M"),
-            name=query.from_user.full_name,
-            first_name=query.from_user.first_name,
-            last_name='' if query.from_user.last_name is None else query.from_user.last_name,
         ),
         show_alert=True
     )

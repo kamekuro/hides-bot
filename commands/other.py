@@ -49,9 +49,9 @@ async def start(client: pyrogram.Client, message: types.Message):
     await utils.answer(
         message=message,
         sticker=random.choice([
-            "CAACAgIAAxkBAAECkihg7Y5tYnlKz9jRe6QCNOyvEZri2wACSQ4AAliyaUuDPYCgY_2GXiAE",
-            "CAACAgIAAxkBAAECkilg7Y5tzJPtIX4UMDgYaoxD6zcrogAC8Q0AAvMraEvkpXQDG5qEbyAE",
-            "CAACAgIAAxkBAAECkipg7Y5tQk6MZlccqoudX9PEnxPbUwACfBAAAhJpcEuU9SdfdRAPdiAE"
+            "CAACAgIAAxkBAAIrL2j-Sh3vrLNZ8Xe-ZCGYFHoXMD1UAAJEfwACwRD4S1YDbEC_NFAvHgQ",
+            "CAACAgIAAxkBAAIrMGj-Sh8DgOGTV5Cr2BOgyhp9qgOoAAI5hgACjEfxS9XEpWIFOBTYHgQ",
+            "CAACAgIAAxkBAAIrMWj-SiFm9eLQQPWjGC8UUNI5HOGdAAIWhwACaRD4Sw5CP9oBYMCDHgQ"
         ])
     )
     return await utils.answer(
