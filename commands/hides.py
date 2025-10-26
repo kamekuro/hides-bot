@@ -116,7 +116,7 @@ async def sendHide(client: pyrogram.Client, query: types.InlineQuery):
                             callback_data=f"open_hide:{rand_uuid}"
                         )
                     ]]),
-                    thumb_url="https://github.com/kamekuro/hides-bot/blob/main/data/hide.png"
+                    thumb_url="https://github.com/kamekuro/hides-bot/raw/main/data/hide.png"
                 ),
                 types.InlineQueryResultArticle(
                     title=query.tds.get("hides", "send_except").format(
@@ -134,7 +134,7 @@ async def sendHide(client: pyrogram.Client, query: types.InlineQuery):
                             callback_data=f"open_except:{rand_uuid}"
                         )
                     ]]),
-                    thumb_url="https://github.com/kamekuro/hides-bot/blob/main/data/except.png"
+                    thumb_url="https://github.com/kamekuro/hides-bot/raw/main/data/except.png"
                 )
             ],
             cache_time=0
@@ -155,7 +155,7 @@ async def sendHide(client: pyrogram.Client, query: types.InlineQuery):
                             callback_data=f"open_spoiler:{rand_uuid}"
                         )
                     ]]),
-                    thumb_url="https://github.com/kamekuro/hides-bot/blob/main/data/spoiler.png"
+                    thumb_url="https://github.com/kamekuro/hides-bot/raw/main/data/spoiler.png"
                 )
             ],
             cache_time=0
